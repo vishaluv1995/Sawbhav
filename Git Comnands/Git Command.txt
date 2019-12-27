@@ -11,3 +11,5 @@
 git remote -v
 git remote add swabhav https://github.com/vishaluv1995/Sawbhav
 git push swabhav master
+
+git clone https://Vishaluv1995@bitbucket.org/Vishaluv1995/swabhav-techlabs.git
