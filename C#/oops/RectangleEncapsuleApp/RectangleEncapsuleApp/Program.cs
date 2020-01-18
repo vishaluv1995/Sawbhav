@@ -7,30 +7,30 @@ namespace RectangleEncapsuleApp
         static void Main(string[] args)
         {
             Rectanlge objsmall = new Rectanlge();
-            objsmall.SetHeight(-200);
-            objsmall.SetWidth(105);
+            objsmall.SetHeightWidth(-200);
+            objsmall.SetHeightWidth(105);
 
             PrintInfo(objsmall);
 
             Console.WriteLine();
 
             Rectanlge objBig = new Rectanlge();
-            objBig.SetHeight(8);
-            objBig.SetWidth(19873677);
+            objBig.SetHeightWidth(8);
+            objBig.SetHeightWidth(19873677);
             PrintInfo(objBig);
 
             Rectanlge objTemp = objBig;
-            Console.WriteLine(objTemp.GetWidth());
-            Console.WriteLine(objBig.GetWidth());
+            Console.WriteLine(objTemp.GetHeightWidth());
+            Console.WriteLine(objBig.GetHeightWidth());
 
-            objTemp.SetWidth(90);
-            Console.WriteLine(objTemp.GetWidth());
-            Console.WriteLine(objBig.GetWidth());
+            objTemp.SetHeightWidth(90);
+            Console.WriteLine(objTemp.GetHeightWidth());
+            Console.WriteLine(objBig.GetHeightWidth());
 
             Console.WriteLine(objTemp.GetHashCode());
 
             objTemp = null;
-            Console.WriteLine(objBig.GetWidth());
+            Console.WriteLine(objBig.GetHeightWidth());
             
             Console.ReadLine();
         }
@@ -38,8 +38,8 @@ namespace RectangleEncapsuleApp
         public static void PrintInfo(Rectanlge temp)
         {
 
-            Console.WriteLine("Height=" + temp.GetHeight());
-            Console.WriteLine("Widht=" + temp.GetWidth());
+            Console.WriteLine("Height=" + temp.GetHeightWidth());
+            Console.WriteLine("Widht=" + temp.GetHeightWidth());
             Console.WriteLine("Area " + temp.CalculteArea());
             Console.WriteLine(temp.GetHashCode());
 
