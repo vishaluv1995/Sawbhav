@@ -8,77 +8,47 @@ namespace RectangleEncapsuleApp
 {
     class Rectanlge
     {
-        //private int width;
-        //private int height;
-
-        private int heightnwidth;
+        private int _width;
+        private int _height;
 
         public int CalculteArea()
         {
-            return width * height;
+            return _width * _height;
         }
-
-
-        public void SetHeightWidth(int pheightwidth)
+        
+        public void SetWidth(int num)
         {
-            if (pheightwidth <= -1)
-            {
-                heightnwidth = 1;
-            }
-            else if (pheightwidth > 100)
-            {
-                heightnwidth = 100;
-            }
-            else
-            {
-                heightnwidth = pheightwidth;
-            }
+            _width = CorrectDimension(num);
         }
 
-        public int GetHeightWidth()
+        public void SetHeight(int num)
         {
-            return heightnwidth;
+            _height = CorrectDimension(num);
         }
 
+        private int CorrectDimension(int num)
+        {
+            if (num <= -1)
+            {
+                return 1;
+            }
 
-        //public void SetWidth(int pwidth)
-        //{
-        //    if (pwidth <= -1)
-        //    {
-        //        width = 1;
-        //    }
-        //    else if (pwidth > 100)
-        //    {
-        //        width = 100;
-        //    }
-        //    else
-        //    {
-        //        width = pwidth;
-        //    }
-        //}
-        //public void SetHeight(int pheight)
-        //{
-        //    if (pheight <= -1)
-        //    {
-        //        height = 1;
-        //    }
-        //    else if (pheight > 100)
-        //    {
-        //        height = 100;
-        //    }
-        //    else
-        //    {
-        //        height = pheight;
-        //    }
-        //}
-        //public int GetHeight()
-        //{
-        //    return height;
-        //}
-        //public int GetWidth()
-        //{
-        //    return width;
-        //}
+            if (num > 100)
+            {
+                return 100;
+            }
+
+            return num;
+        }
+
+        public int GetHeight()
+        {
+            return _height;
+        }
+        public int GetWidth()
+        {
+            return _width;
+        }
     }
 
 }
