@@ -22,22 +22,27 @@ namespace AccountApp
             PrintInfo(objaccount);
 
             Console.WriteLine("After Withrawal Info");
-            objaccount.Withraw(600);
+            objaccount.WithrawAmt(500);
             PrintInfo(objaccount);
 
 
-            Account objaccount2 = new Account("v37645", "Vishal");
+            Account objaccount2 = new Account("Ashish", "A5678", 500);
+            Console.WriteLine("Before Deposite Info");
             PrintInfo(objaccount2);
-            Console.ReadLine();
+
+            Console.WriteLine("After Deposite Info");
+            objaccount2.DepositeAmt(500);
+            PrintInfo(objaccount2);
 
             Console.ReadLine();
         }
 
         public static void PrintInfo(Account objaccount)
         {
-            Console.WriteLine("Custmer Name:" + objaccount.CustName());
-            Console.WriteLine("A/c No.:" + objaccount.AcNo());
-            Console.WriteLine("Balance Amt:" + objaccount.BalAmt());
+            Console.WriteLine("Custmer Name:" + objaccount.CustName);
+            Console.WriteLine("A/c No.:" + objaccount.AcNo);
+            Console.WriteLine("Balance Amt:" + objaccount.BalAmt);
+            Console.WriteLine("Number of transaction:" + objaccount.NumberOfTransCount);
             Console.WriteLine("");
         }
     }

@@ -14,14 +14,14 @@ namespace Hw_CircleEnum
             Console.ForegroundColor = ConsoleColor.Green;
 
             Circle objCircle = new Circle();
-            objCircle.Radius=5.0f;
+            objCircle.Radius = 5.0f;
             objCircle.Color = BorderColor.Blue;
 
-            PrintMethod(objCircle);
+            Print(objCircle);
             Console.ReadLine();
         }
 
-        public static void PrintMethod(Circle objCircle)
+        public static void Print(Circle objCircle)
         {
             Console.WriteLine("Radius - " + objCircle.Radius);
             Console.WriteLine("Circle Area - " + objCircle.CalculateArea);

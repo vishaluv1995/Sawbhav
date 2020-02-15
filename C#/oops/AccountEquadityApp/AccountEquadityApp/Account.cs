@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AccountApp
+namespace AccountEquadityApp
 {
-    class Account
+    public class Account
     {
         private string _custName;
         private string _acNo;
         private int _balance;
-        private int _countrans;
         private const int _minbal = 500;
 
         public Account(string CustName, string AcNo, int BalAmt)
@@ -19,7 +18,6 @@ namespace AccountApp
             _custName = CustName;
             _acNo = AcNo;
             _balance = BalAmt;
-            _countrans = 0;
             Console.WriteLine("Account created");
         }
 
@@ -28,11 +26,22 @@ namespace AccountApp
         {
         }
 
+        public override string ToString()
+        {
+
+            return "Acno :" + _acNo + " Name :" + CustName + " Balance:" + _balance;
+        }
+
+        public override bool Equals(object obj)
+        {
+            Account second = (Account)obj;
+            return second.AcNo.Equals(this.AcNo);
+        }
+
         public void DepositeAmt(int depositeamt)
         {
             Console.WriteLine("Amount has been desposited:" + depositeamt);
             _balance = _balance + depositeamt;
-            _countrans++;
         }
 
         public void WithrawAmt(int amount)
@@ -44,7 +53,6 @@ namespace AccountApp
             }
 
             _balance = _balance - amount;
-            _countrans++;
         }
 
         public string CustName
@@ -72,12 +80,5 @@ namespace AccountApp
 
         }
 
-        public int NumberOfTransCount
-        {
-            get
-            {
-                return _countrans;
-            }
-        }
     }
 }
