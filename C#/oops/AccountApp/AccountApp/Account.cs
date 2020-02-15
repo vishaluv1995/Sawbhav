@@ -19,7 +19,7 @@ namespace AccountApp
             _custName = CustName;
             _acNo = AcNo;
             _balance = BalAmt;
-            _countrans = 0;
+            //_countrans = 0;
             Console.WriteLine("Account created");
         }
 
