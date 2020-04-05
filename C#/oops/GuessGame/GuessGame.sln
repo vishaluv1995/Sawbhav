@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineItem", "LineItem\LineItem.csproj", "{E583B2B7-D8E5-4A19-B0B5-FB7D638CD8CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessGame", "GuessGame\GuessGame.csproj", "{9E934DF2-B45F-46A0-BAA8-FE941BC257BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E583B2B7-D8E5-4A19-B0B5-FB7D638CD8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E583B2B7-D8E5-4A19-B0B5-FB7D638CD8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E583B2B7-D8E5-4A19-B0B5-FB7D638CD8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E583B2B7-D8E5-4A19-B0B5-FB7D638CD8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E934DF2-B45F-46A0-BAA8-FE941BC257BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E934DF2-B45F-46A0-BAA8-FE941BC257BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E934DF2-B45F-46A0-BAA8-FE941BC257BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E934DF2-B45F-46A0-BAA8-FE941BC257BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CD05CB45-9145-47E6-AD60-AFAA0ED7D73A}
+		SolutionGuid = {DC3A86C4-2642-4008-B3DF-CC76F0365449}
 	EndGlobalSection
 EndGlobal

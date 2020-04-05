@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E583B2B7-D8E5-4A19-B0B5-FB7D638CD8CF}</ProjectGuid>
+    <ProjectGuid>{3549C988-EFF0-4E7A-8667-688E114B9C24}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LineItem</RootNamespace>
-    <AssemblyName>LineItem</AssemblyName>
+    <RootNamespace>GenericItem</RootNamespace>
+    <AssemblyName>GenericItem</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LineItemN.cs" />
+    <Compile Include="LineItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
